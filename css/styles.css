@@ -541,16 +541,23 @@ a {
 
 .collapsible__chevron {
     transform: rotate(-90deg);
+    transition: 0.3s;
 }
-
+/* Instead of using display: none, use this. Max-height: 0 alone will still show because of
+overflow. Set overflow to hidden. This allows us to create a transition, which would not be possible 
+with display: none. */
 .collapsible__content {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 .collapsible--expanded .collapsible__chevron {
     transform: rotate(0);
 }
-
+/* Use max-height and not height, otherwise height:100vh would occupy
+the whole page, max-height limits the height. */
 .collapsible--expanded .collapsible__content {
-    display: block;
+    max-height: 100vh;
+    opacity: 1;
 }
