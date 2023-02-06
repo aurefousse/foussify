@@ -684,9 +684,11 @@ that is a double class selector. We're selecting an element that has both of the
     .hero{ 
         padding-top: 0;
     }
-    
+
     .hero__content {
         text-align: left;
         align-self: center;
     }
 }
+
+/* Optimizing Image */
