@@ -760,10 +760,3 @@ Also note the setting of margin to 0 for vertical and auto for horizontal
     max-width: 500px;
     margin: 0 auto
 }
-
-@media screen and (min-width: 1040px) {
-    .block-plans .grid{
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-}
