@@ -604,6 +604,7 @@ the whole page, max-height limits the height. */
 
 .block__heading {
     margin-top: 0;
+    text-transform: capitalize;
 }
 
 .block--dark {
@@ -751,12 +752,36 @@ Also note the setting of margin to 0 for vertical and auto for horizontal
 }
 
 /* Plans Block */
-.block-plans .grid{
+.block-plans .grid {
     gap: 8rem 4rem;
     align-items: center;
 }
 
 .block-plans .card {
     max-width: 500px;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+/* Features Block */
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
 }
