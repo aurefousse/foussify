@@ -607,6 +607,7 @@ the whole page, max-height limits the height. */
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
